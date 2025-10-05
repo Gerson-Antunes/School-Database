@@ -3,8 +3,6 @@ sql
 -- -----------------------------------------------------
 -- Table `00122744`.`school`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `00122744`.`school` ;
-
 CREATE TABLE IF NOT EXISTS `00122744`.`school` (
   `SchoolName` VARCHAR(60) NOT NULL,
   `Address` VARCHAR(80) NOT NULL,
@@ -24,8 +22,6 @@ SELECT * FROM school;
 -- -----------------------------------------------------
 -- Table `00122744`.`teacher`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `00122744`.`teacher` ;
-
 CREATE TABLE IF NOT EXISTS `00122744`.`teacher` (
   `TeacherID` INT NOT NULL,
   `FirstName` VARCHAR(25) NOT NULL,
@@ -58,8 +54,6 @@ SELECT * FROM teacher;
 -- -----------------------------------------------------
 -- Table `00122744`.`subject`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `00122744`.`subject` ;
-
 CREATE TABLE IF NOT EXISTS `00122744`.`subject` (
   `SubjectName` VARCHAR(10) NOT NULL,
   `SubjectDescription` VARCHAR(150) NOT NULL,
@@ -89,8 +83,6 @@ SELECT * FROM subject;
 -- -----------------------------------------------------
 -- Table `00122744`.`student`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `00122744`.`student` ;
-
 CREATE TABLE IF NOT EXISTS `00122744`.`student` (
   `StudentID` INT NOT NULL,
   `FirstName` VARCHAR(25) NOT NULL,
@@ -129,8 +121,6 @@ SELECT * FROM student;
 -- -----------------------------------------------------
 -- Table `00122744`.`enrolment`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `00122744`.`enrolment` ;
-
 CREATE TABLE IF NOT EXISTS `00122744`.`enrolment` (
   `DateOfEnrolment` DATE NOT NULL,
   `StudentGrade` CHAR(1) NOT NULL,
